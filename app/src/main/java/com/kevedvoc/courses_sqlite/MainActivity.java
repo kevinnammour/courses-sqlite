@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MinorActivity.class);
                 intent.putExtra("link", course_links.get(i));
                 startActivity(intent);
             }
